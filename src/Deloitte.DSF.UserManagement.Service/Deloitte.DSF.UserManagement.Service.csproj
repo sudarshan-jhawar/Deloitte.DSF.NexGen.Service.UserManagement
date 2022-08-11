@@ -18,4 +18,9 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Deloitte.DSF.UserManagement.Application\Deloitte.DSF.UserManagement.Application.csproj" />
+    <ProjectReference Include="..\Infrastructure\Deloitte.DSF.UserManagement.Infrastructure\Deloitte.DSF.UserManagement.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

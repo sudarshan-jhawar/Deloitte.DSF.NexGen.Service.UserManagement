@@ -4,7 +4,13 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	  <RootNamespace>Deloitte.DSF.UserManagement.Domain</RootNamespace>
+	  <AssemblyName>Deloitte.DSF.UserManagement.Domain</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NewId" Version="3.0.3" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Deloitte.DSF.UserManagement.Shared\Deloitte.DSF.UserManagement.Shared.csproj" />
