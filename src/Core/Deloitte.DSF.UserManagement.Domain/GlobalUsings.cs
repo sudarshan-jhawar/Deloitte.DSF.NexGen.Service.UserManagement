@@ -7,5 +7,5 @@ global using global::System.Threading;
 global using global::System.Threading.Tasks;
 global using DefaultIdType = global::System.Guid;
 global using Deloitte.DSF.UserManagement.Domain.Common;
-global using Deloitte.DSF.UserManagement.Domain.Common.Contract;
+global using Deloitte.DSF.UserManagement.Domain.Common.Contracts;
 

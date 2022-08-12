@@ -1,4 +1,4 @@
-﻿namespace Deloitte.DSF.UserManagement.Domain.Common.Contract;
+﻿namespace Deloitte.DSF.UserManagement.Domain.Common.Contracts;
 
 public interface IEntity
 {

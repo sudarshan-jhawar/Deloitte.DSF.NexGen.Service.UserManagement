@@ -1,6 +1,6 @@
 ﻿using MassTransit;
 
-namespace Deloitte.DSF.UserManagement.Domain.Common.Contract;
+namespace Deloitte.DSF.UserManagement.Domain.Common.Contracts;
 
 public abstract class BaseEntity : BaseEntity<DefaultIdType>
 {
