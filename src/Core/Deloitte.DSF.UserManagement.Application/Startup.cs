@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using MediatR;
+using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
 namespace Deloitte.DSF.UserManagement.Application;
@@ -8,6 +9,7 @@ public static class Startup
     {
         var assembly = Assembly.GetExecutingAssembly();
         return services
-            .AddValidatorsFromAssembly(assembly);
+            .AddValidatorsFromAssembly(assembly)
+            .AddMediatR(assembly);
     }
 }

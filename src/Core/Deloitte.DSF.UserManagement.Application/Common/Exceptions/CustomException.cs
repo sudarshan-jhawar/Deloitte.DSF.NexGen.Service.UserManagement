@@ -8,10 +8,15 @@ public class CustomException : Exception
 
     public HttpStatusCode StatusCode { get; }
 
-    public CustomException(string message, List<string>? errors = default, HttpStatusCode statusCode = HttpStatusCode.InternalServerError)
+    public Guid CorrelationId { get; }
+
+    public CustomException(string message,
+                           List<string>? errors = default,
+                           HttpStatusCode statusCode = HttpStatusCode.InternalServerError)
         : base(message)
     {
         ErrorMessages = errors;
         StatusCode = statusCode;
+        CorrelationId = Guid.NewGuid();
     }
 }
